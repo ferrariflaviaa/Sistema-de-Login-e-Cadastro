@@ -25,10 +25,20 @@
                 <label for="">Número de telefone:</label>
                 <input type="text" name="telefone" id="telefone" placeholder="Telefone">
             </div>
-            <div class="button">
-                <button>Enviar</button>
+
+            <div class="buttonContainer">
+                <div class="button">
+                    <button>
+                        <script>
+                            document.write('<a href=" ../../index.html' + document.referrer + '">Voltar</a>');
+                        </script>
+                        
+                    </button>
+                </div>
+                <div class="button">
+                    <button>Enviar</button>
+                </div>
             </div>
-    
         </form>
         <div id="resultado"></div>
     </div>
