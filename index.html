@@ -1,22 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Login</title>
 </head>
+
 <body>
-    <div>
-        <form id="form">
-            <label for="">Login</label><br/>
-            <input type="email" name="email" id="email"><br/>
-            <label for="">Senha</label><br/>
-            <input type="password" name="password" id="password"><br/>
-            <button>Enviar</button>
+    <div class="container">
+        <form id="form" class="form-login">
+            <h1>Faça seu login</h1>
+            <div class="input">
+                <label for="">Login:</label>
+                <input type="email" name="email" id="email" placeholder="Email">
+            </div>
+            <div class="input">
+                <label for="">Senha:</label>
+                <input type="password" name="password" id="password" placeholder="Password">
+            </div>
+            <div class="button">
+                <button>Enviar</button>
+            </div>
+            <div class="additional">
+                <span>Esqueci minha senha</span>
+            </div>
+            <div class="additional">
+                <span>Ainda não sou cliente</span>
+            </div>
         </form>
         <div id="resultado"></div>
     </div>
     <script src="js/index.js"></script>
 </body>
+
 </html>
